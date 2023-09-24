@@ -28,7 +28,7 @@ php_version="php-8.2.8"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 
-cloudreve_version="3.8.0"
+cloudreve_version="3.8.2"
 
 nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-27.0.0.tar.bz2"
 
@@ -95,7 +95,7 @@ using_swap_now=0
 update=0
 # 在 install_update_xray_reality_web 函数中
 in_install_update_xray_reality_web=0
-script_url="https://github.com/kirin10000/Xray-script/raw/main/Xray-REALITY+Web.sh"
+script_url="https://github.com/bluejerry2021/Xray-script/raw/main/Xray-REALITY+Web.sh"
 
 #功能性函数：
 #定义几个颜色
