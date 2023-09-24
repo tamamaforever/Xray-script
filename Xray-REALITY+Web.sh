@@ -1239,11 +1239,11 @@ install_bbr()
                     fi
                     local temp_kernel_sh_url
                     if [ $choice -eq 1 ]; then
-                        temp_kernel_sh_url="https://github.com/kirin10000/update-kernel/raw/master/update-kernel-stable.sh"
+                        temp_kernel_sh_url="https://github.com/bluejerry2021/update-kernel/raw/master/update-kernel-stable.sh"
                     elif [ $choice -eq 4 ]; then
-                        temp_kernel_sh_url="https://github.com/kirin10000/update-kernel/raw/master/update-kernel.sh"
+                        temp_kernel_sh_url="https://github.com/bluejerry2021/update-kernel/raw/master/update-kernel.sh"
                     else
-                        temp_kernel_sh_url="https://github.com/kirin10000/xanmod-install/raw/main/xanmod-install.sh"
+                        temp_kernel_sh_url="https://github.com/bluejerry2021/xanmod-install/raw/main/xanmod-install.sh"
                     fi
                     if ! curl -Lo kernel.sh "$temp_kernel_sh_url"; then
                         red    "获取内核安装脚本失败"
