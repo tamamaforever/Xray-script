@@ -18,7 +18,7 @@ unset nproc
 
 # 安装配置（nginx、openssl、PHP、cloudreve、xray的安装版本、位置等信息）
 nginx_version="nginx-1.25.1"
-openssl_version="openssl-openssl-3.1.1"
+openssl_version="openssl-openssl-3.1.3"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
@@ -28,7 +28,7 @@ php_version="php-8.2.8"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 
-cloudreve_version="3.8.2"
+cloudreve_version="3.8.3"
 
 nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-27.0.0.tar.bz2"
 
