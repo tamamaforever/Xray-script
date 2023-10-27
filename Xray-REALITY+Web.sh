@@ -95,7 +95,7 @@ using_swap_now=0
 update=0
 # 在 install_update_xray_reality_web 函数中
 in_install_update_xray_reality_web=0
-script_url="https://github.com/bluejerry2021/Xray-script/raw/main/Xray-REALITY+Web.sh"
+script_url="https://github.com/tamamaforever/Xray-script/raw/main/Xray-REALITY+Web.sh"
 
 #功能性函数：
 #定义几个颜色
@@ -147,13 +147,13 @@ version_ge()
 }
 report_bug()
 {
-    green  "欢迎进行Bug report(https://github.com/kirin10000/Xray-script/issues)，感谢您的支持"
+    green  "欢迎进行Bug report(https://github.com/tamamaforever/Xray-script/issues)，感谢您的支持"
     yellow "按回车键继续或者Ctrl+c退出"
     read -rs
 }
 report_bug_exit()
 {
-    green  "欢迎进行Bug report(https://github.com/kirin10000/Xray-script/issues)，感谢您的支持"
+    green  "欢迎进行Bug report(https://github.com/tamamaforever/Xray-script/issues)，感谢您的支持"
     exit 1
 }
 #进入工作目录
@@ -1239,11 +1239,11 @@ install_bbr()
                     fi
                     local temp_kernel_sh_url
                     if [ $choice -eq 1 ]; then
-                        temp_kernel_sh_url="https://github.com/bluejerry2021/update-kernel/raw/master/update-kernel-stable.sh"
+                        temp_kernel_sh_url="https://github.com/tamamaforever/update-kernel/raw/master/update-kernel-stable.sh"
                     elif [ $choice -eq 4 ]; then
-                        temp_kernel_sh_url="https://github.com/bluejerry2021/update-kernel/raw/master/update-kernel.sh"
+                        temp_kernel_sh_url="https://github.com/tamamaforever/update-kernel/raw/master/update-kernel.sh"
                     else
-                        temp_kernel_sh_url="https://github.com/bluejerry2021/xanmod-install/raw/main/xanmod-install.sh"
+                        temp_kernel_sh_url="https://github.com/tamamaforever/xanmod-install/raw/main/xanmod-install.sh"
                     fi
                     if ! curl -Lo kernel.sh "$temp_kernel_sh_url"; then
                         red    "获取内核安装脚本失败"
@@ -1704,7 +1704,7 @@ readProtocolConfig()
     echo
     blue   " 注："
     blue   "   1. 如不使用CDN，请选择TCP(REALITY)"
-    blue   "   2. gRPC和WebSocket支持通过CDN，关于两者的区别，详见：https://github.com/kirin10000/Xray-script#关于grpc与websocket"
+    blue   "   2. gRPC和WebSocket支持通过CDN，关于两者的区别，详见：https://www.frontendmag.com/insights/grpc-vs-websocket/"
     echo
     local choice=""
     while [[ ! "$choice" =~ ^(0|[1-9][0-9]*)$ ]] || ((choice>7))
@@ -3058,7 +3058,7 @@ reset_nextcloud_host()
     while ! [[ -f "${nginx_prefix}/html/${true_domain_list[$1]}/config/config.php" ]]
     do
         yellow "域名 ${domain_list[$1]} 的nextcloud配置文件不存在，请先打开网站 https://${domain_list[$1]} 进行nextcloud初始化！"
-        yellow "如果有疑问，请前往 https://github.com/kirin10000/Xray-script/issues 进行Bug Report"
+        yellow "如果有疑问，请前往 https://github.com/tamamaforever/Xray-script/issues 进行Bug Report"
         tyblue "完成初始化后按回车键继续。。。"
         read -rs
         echo
@@ -4352,11 +4352,11 @@ start_menu()
     tyblue "------------------------ Xray-REALITY+Web 搭建/管理脚本 ------------------------"
     tyblue "           系统发行版 ：           ${distro}"
     tyblue "           系统版本   ：           ${system_version}"
-    tyblue "       官网：https://github.com/kirin10000/Xray-script"
+    tyblue "       非官网：https://github.com/tamamaforever/Xray-script"
     tyblue "----------------------------------- 注意事项 -----------------------------------"
     yellow " 1. 此脚本至少需要一个解析到本服务器的域名"
     tyblue " 2. 此脚本安装时间较长，建议在安装前阅读："
-    tyblue "      https://github.com/kirin10000/Xray-script#安装时长说明"
+    tyblue "      https://github.com/tamamaforever/Xray-script/blob/main/README-TLS.md#安装时长说明"
     green  " 3. 建议在纯净的系统上使用此脚本 (VPS控制台-重置系统)"
     tyblue "----------------------------------------------------------------------------"
     echo
