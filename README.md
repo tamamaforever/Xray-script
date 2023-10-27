@@ -15,7 +15,7 @@ dnf --setopt install_weak_deps=0 -y install curl ca-certificates || yum --setopt
 ```
 ### 3. 获取/更新脚本
 ```bash
-curl -Lo Xray-REALITY+Web.sh https://github.com/bluejerry2021/Xray-script/raw/main/Xray-REALITY+Web.sh
+curl -Lo Xray-REALITY+Web.sh https://github.com/tamamaforever/Xray-script/raw/main/Xray-REALITY+Web.sh
 ```
 ### 4. 执行脚本
 ```bash
