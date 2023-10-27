@@ -107,7 +107,7 @@ dnf -y install wget ca-certificates || yum -y install wget ca-certificates
 ```
 ### 2. 获取/更新脚本
 ```bash
-wget -O Xray-TLS+Web-setup.sh https://github.com/kirin10000/Xray-script/raw/main/Xray-TLS+Web-setup.sh
+wget -O Xray-TLS+Web-setup.sh https://github.com/tamamaforever/Xray-script/raw/main/Xray-TLS+Web-setup.sh
 ```
 ### 3. 执行脚本
 ```bash
