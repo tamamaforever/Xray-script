@@ -18,19 +18,19 @@ unset nproc
 
 # 安装配置（nginx、openssl、PHP、cloudreve、xray的安装版本、位置等信息）
 nginx_version="nginx-1.25.3"
-openssl_version="openssl-openssl-3.1.3"
+openssl_version="openssl-openssl-3.2.0"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 
-php_version="php-8.2.12"
+php_version="php-8.2.14"
 # 此处(php_prefix)请使用绝对路径(安装imagick时有影响)
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 
 cloudreve_version="3.8.3"
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-27.1.3.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-27.1.5.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 
