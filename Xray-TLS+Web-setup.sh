@@ -20,13 +20,13 @@ unset ssh_service
 
 #安装配置信息
 nginx_version="nginx-1.25.3"
-openssl_version="openssl-openssl-3.2.0"
+openssl_version="openssl-openssl-3.2.1"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 nginx_is_installed=""
 
-php_version="php-8.2.14"
+php_version="php-8.2.15"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 unset php_is_installed
@@ -36,7 +36,7 @@ cloudreve_prefix="/usr/local/cloudreve"
 cloudreve_service="/etc/systemd/system/cloudreve.service"
 unset cloudreve_is_installed
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-27.1.5.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-28.0.1.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 unset xray_is_installed
@@ -3137,15 +3137,15 @@ print_config_info()
     yellow "注：部分选项可能分享链接无法涉及，如果不怕麻烦，建议手动填写"
     ask_if "是否生成分享链接？(y/n)" && print_share_link
     echo
-    yellow " 关于fingerprint与alpn，详见：https://github.com/https://github.com/tamamaforever/Xray-script/blob/main/README-TLS.md#关于tls握手tls指纹和alpn"
+    yellow " 关于fingerprint与alpn，详见：https://github.com/tamamaforever/Xray-script/blob/main/README-TLS.md#关于tls握手tls指纹和alpn"
     echo
     blue   " 若要实现Fullcone(NAT类型开放)，需要以下条件："
     blue   "   如果客户端系统为Windows，并且正在使用透明代理或TUN/Bypass LAN，请确保当前网络设置为专用网络"
     echo
-    tyblue " 脚本最后更新时间：2023.1.1"
+    tyblue " Update：2024.01.31"
     echo
     red    " 此脚本仅供交流学习使用，请勿使用此脚本行违法之事。网络非法外之地，行非法之事，必将接受法律制裁!!!!"
-    tyblue " 2020.11"
+    tyblue " 2024.01"
 }
 
 install_update_xray_tls_web()
