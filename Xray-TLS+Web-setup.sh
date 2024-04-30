@@ -19,14 +19,14 @@ unset timezone
 unset ssh_service
 
 #安装配置信息
-nginx_version="nginx-1.25.3"
-openssl_version="openssl-openssl-3.2.1"
+nginx_version="nginx-1.25.5"
+openssl_version="openssl-openssl-3.3.0"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 nginx_is_installed=""
 
-php_version="php-8.2.15"
+php_version="php-8.3.6"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 unset php_is_installed
@@ -36,7 +36,7 @@ cloudreve_prefix="/usr/local/cloudreve"
 cloudreve_service="/etc/systemd/system/cloudreve.service"
 unset cloudreve_is_installed
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-28.0.1.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-29.0.0.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 unset xray_is_installed
@@ -3142,10 +3142,10 @@ print_config_info()
     blue   " 若要实现Fullcone(NAT类型开放)，需要以下条件："
     blue   "   如果客户端系统为Windows，并且正在使用透明代理或TUN/Bypass LAN，请确保当前网络设置为专用网络"
     echo
-    tyblue " Update：2024.01.31"
+    tyblue " Update：2024.04.30"
     echo
     red    " 此脚本仅供交流学习使用，请勿使用此脚本行违法之事。网络非法外之地，行非法之事，必将接受法律制裁!!!!"
-    tyblue " 2024.01"
+    tyblue " 2024.04"
 }
 
 install_update_xray_tls_web()
