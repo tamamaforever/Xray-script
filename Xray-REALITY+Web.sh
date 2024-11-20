@@ -18,19 +18,19 @@ unset nproc
 
 # 安装配置（nginx、openssl、PHP、cloudreve、xray的安装版本、位置等信息）
 nginx_version="nginx-1.26.2"
-openssl_version="openssl-openssl-3.3.1"
+openssl_version="openssl-openssl-3.4.0"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 
-php_version="php-8.3.11"
+php_version="php-8.3.13"
 # 此处(php_prefix)请使用绝对路径(安装imagick时有影响)
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 
 cloudreve_version="3.8.3"
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-29.0.4.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-30.0.2.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 
@@ -3319,12 +3319,12 @@ print_config_info()
         tyblue "------------------------------------------------------------------------"
     fi
     echo
-    tyblue " 请使用客户端Xray版本 v1.8.3+"
+    tyblue " 请使用客户端Xray版本 v24.11.11+"
     echo
-    tyblue " Update：2024.09.01"
+    tyblue " Update：2024.11.20"
     echo
     red    " 声明：此脚本仅供交流学习使用，请勿使用此脚本行违法之事！网络非法外之地，行非法之事，必将接受法律制裁！"
-    tyblue " 2024.09"
+    tyblue " 2024.11"
 }
 
 install_update_xray_reality_web()
