@@ -20,13 +20,13 @@ unset ssh_service
 
 #安装配置信息
 nginx_version="nginx-1.26.2"
-openssl_version="openssl-openssl-3.3.1"
+openssl_version="openssl-openssl-3.4.0"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 nginx_is_installed=""
 
-php_version="php-8.3.11"
+php_version="php-8.3.13"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 unset php_is_installed
@@ -36,7 +36,7 @@ cloudreve_prefix="/usr/local/cloudreve"
 cloudreve_service="/etc/systemd/system/cloudreve.service"
 unset cloudreve_is_installed
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-29.0.4.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-30.0.2.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 unset xray_is_installed
@@ -3142,10 +3142,10 @@ print_config_info()
     blue   " 若要实现Fullcone(NAT类型开放)，需要以下条件："
     blue   "   如果客户端系统为Windows，并且正在使用透明代理或TUN/Bypass LAN，请确保当前网络设置为专用网络"
     echo
-    tyblue " Update：2024.09.01"
+    tyblue " Update：2024.11.20"
     echo
     red    " 此脚本仅供交流学习使用，请勿使用此脚本行违法之事。网络非法外之地，行非法之事，必将接受法律制裁!!!!"
-    tyblue " 2024.09"
+    tyblue " 2024.11"
 }
 
 install_update_xray_tls_web()
@@ -4045,12 +4045,12 @@ start_menu()
     echo
     tyblue "        Cloudreve ：           ${cloudreve_status}"
     echo
-    tyblue "       官网：https://github.com/kirin10000/Xray-script"
+    tyblue "       官网：https://github.com/tamamaforever/Xray-script"
     echo
     tyblue "----------------------------------注意事项----------------------------------"
     yellow " 1. 此脚本需要一个解析到本服务器的域名"
     tyblue " 2. 此脚本安装时间较长，建议在安装前阅读："
-    tyblue "      https://github.com/kirin10000/Xray-script#安装时长说明"
+    tyblue "      https://github.com/tamamaforever/Xray-script#安装时长说明"
     green  " 3. 建议在纯净的系统上使用此脚本 (VPS控制台-重置系统)"
     tyblue "----------------------------------------------------------------------------"
     echo
