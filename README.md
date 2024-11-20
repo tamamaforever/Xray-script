@@ -123,7 +123,7 @@ bash Xray-REALITY+Web.sh
 ||git|git|
 ||libmagickwand-dev|ImageMagick-devel|
 ## 注
-1.本文链接(官网)：https://github.com/kirin10000/Xray-script
+1.本文链接(官网)：https://github.com/kirin10000/Xray-script 已失效
 
 2.参考教程：https://www.v2fly.org/config/overview.html https://guide.v2fly.org/ https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html https://docs.cloudreve.org/
 
