@@ -17,20 +17,20 @@ unset nproc
 
 
 # 安装配置（nginx、openssl、PHP、cloudreve、xray的安装版本、位置等信息）
-nginx_version="nginx-1.26.2"
+nginx_version="nginx-1.27.3"
 openssl_version="openssl-openssl-3.4.0"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 
-php_version="php-8.3.13"
+php_version="php-8.3.15"
 # 此处(php_prefix)请使用绝对路径(安装imagick时有影响)
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 
 cloudreve_version="3.8.3"
 
-nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-30.0.2.tar.bz2"
+nextcloud_url="https://download.nextcloud.com/server/releases/nextcloud-30.0.4.tar.bz2"
 
 xray_config="/usr/local/etc/xray/config.json"
 
@@ -762,9 +762,9 @@ doupdate()
         check_install_dependency ubuntu-release-upgrader-core ""
         echo -e "\\n\\n\\n"
         tyblue "------------------请选择升级系统版本--------------------"
-        tyblue " 1. beta版(测试版)          当前版本号：23.10"
-        tyblue " 2. release版(稳定版)       当前版本号：23.04"
-        tyblue " 3. LTS版(长期支持版)       当前版本号：22.04"
+        tyblue " 1. beta版(测试版)          当前版本号：24.10"
+        tyblue " 2. release版(稳定版)       当前版本号：24.10"
+        tyblue " 3. LTS版(长期支持版)       当前版本号：24.04"
         tyblue " 0. 不升级系统"
         tyblue "-------------------------注意事项-------------------------"
         yellow " 1.升级过程中遇到问话/对话框，如果不清楚，请选择yes/y/第一个选项"
@@ -791,7 +791,7 @@ doupdate()
             if [ $in_install_update_xray_reality_web -eq 1 ]; then
                 echo
                 tyblue "提示：即将开始升级系统"
-                yellow " 升级完系统后服务器将重启，重启后，请再次运行脚本完成 Xray-TLS+Web 剩余部分的安装/升级"
+                yellow " 升级完系统后服务器将重启，重启后，请再次运行脚本完成 Xray-REALITY+Web 剩余部分的安装/升级"
                 yellow " 再次运行脚本时，重复之前选过的选项即可"
                 echo
                 sleep 2s
@@ -1229,7 +1229,7 @@ install_bbr()
                     if [ $in_install_update_xray_reality_web -eq 1 ]; then
                         echo
                         tyblue "提示："
-                        yellow " 更换内核后服务器将重启，重启后，请再次运行脚本完成 Xray-TLS+Web 剩余部分的安装/升级"
+                        yellow " 更换内核后服务器将重启，重启后，请再次运行脚本完成 Xray-REALITY+Web 剩余部分的安装/升级"
                         yellow " 再次运行脚本时，重复之前选过的选项即可"
                         echo
                         sleep 2s
