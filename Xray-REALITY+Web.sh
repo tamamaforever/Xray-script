@@ -17,13 +17,13 @@ unset nproc
 
 
 # 安装配置（nginx、openssl、PHP、cloudreve、xray的安装版本、位置等信息）
-nginx_version="nginx-1.27.3"
-openssl_version="openssl-openssl-3.4.0"
+nginx_version="nginx-1.27.4"
+openssl_version="openssl-openssl-3.4.1"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 
-php_version="php-8.3.15"
+php_version="php-8.3.16"
 # 此处(php_prefix)请使用绝对路径(安装imagick时有影响)
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
@@ -3319,12 +3319,12 @@ print_config_info()
         tyblue "------------------------------------------------------------------------"
     fi
     echo
-    tyblue " 请使用客户端Xray版本 v24.11.11+"
+    tyblue " 请使用客户端Xray版本 v25.1.30+"
     echo
-    tyblue " Update：2024.11.20"
+    tyblue " Update：2025.02.14"
     echo
     red    " 声明：此脚本仅供交流学习使用，请勿使用此脚本行违法之事！网络非法外之地，行非法之事，必将接受法律制裁！"
-    tyblue " 2024.11"
+    tyblue " 2025.02"
 }
 
 install_update_xray_reality_web()
