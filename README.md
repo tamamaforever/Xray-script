@@ -1,5 +1,5 @@
 # 2025
-脚本不会适配xhttp等更新，要使用xhttp可继续用脚本，自行修改xray配置文件
+脚本不会适配xhttp，要使用xhttp可自行修改xray配置文件或用xray-ui
 ***
 # Xray-REALITY+Web搭建/管理脚本
 ## 脚本使用说明
