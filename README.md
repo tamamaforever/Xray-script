@@ -1,6 +1,3 @@
-# Cloudreve 3.8.3 更新到 4.0
-https://docsv4.cloudreve.org/zh/maintain/upgrade-from-v3
-***
 # 2025
 脚本不会适配xhttp，要使用xhttp可自行修改xray配置文件或用xray-ui
 ***
